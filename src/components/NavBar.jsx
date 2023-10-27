@@ -1,28 +1,22 @@
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+
 import { CartWidget } from "./CartWidget";
 
 export const NavBar = () => {
   return (
-    <header>
-      <nav>
 
-        <div>
-
-        <ul>
-          <li> <a href="">Iniciar Sesion</a>
-            </li>
-
-          <li> <a href="">Carrito</a> 
-          </li>
-
-          <li> <a href="">Favoritos</a>
-          </li>
-
-        </ul>
-        </div>
- 
-      </nav>
-        <CartWidget />
-
-    </header>
+    <Navbar bg="light" data-bs-theme="light">
+        <Container>
+          <Navbar.Brand href="#home">Grillas y Grullasr</Navbar.Brand>
+          <Nav className="me-auto">
+            <Nav.Link href="#home">Iniciar Sesion</Nav.Link>
+            <Nav.Link href="#features">Carrito</Nav.Link>
+            <Nav.Link href="#pricing">Favoritos</Nav.Link>
+          </Nav> 
+          <CartWidget />
+        </Container>
+      </Navbar>
   );
 };

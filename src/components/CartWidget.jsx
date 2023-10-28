@@ -1,15 +1,15 @@
-import cart from "./img/carrito-de-compras.png";
+import React, { useState } from "react";
+import { Button } from "react-bootstrap";
+import { Cart4 } from "react-bootstrap-icons";
 
-export const CartWidget = () => {
+export const CartWidget = ({ count }) => {
 
     return (
         <>
-        <img src= {cart} alt = "carrito" />;
-        <span>1</span>;
-
+            <Button>
+                <Cart4/>
+            </Button>
+            {count}
         </>
-
     );
-    
-
 };

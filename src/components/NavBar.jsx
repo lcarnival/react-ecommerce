@@ -12,9 +12,9 @@ export const NavBar = () => {
         <Container>
           <Navbar.Brand href="#home">Grillas y Grullas</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="#home">Iniciar Sesion</Nav.Link>
-            <Nav.Link href="#features">Carrito</Nav.Link>
-            <Nav.Link href="#pricing">Favoritos</Nav.Link>
+            <Nav.Link href="#home">Nivel Inicial</Nav.Link>
+            <Nav.Link href="#features">Nivel Primario</Nav.Link>
+            <Nav.Link href="#pricing">Nivel Secundario</Nav.Link>
           </Nav> 
           <CartWidget count={5}/>
         </Container>

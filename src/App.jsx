@@ -1,19 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import {NavBar} from "./components/NavBar"
-import {title} from "./components/Tittle"
-import {ItemListContainer}from "./components/ItemListContainer"
+import logo from "./logo.svg";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+import { NavBar } from "./components/NavBar";
+import { title } from "./components/Tittle";
+import { ItemListContainer } from "./components/ItemListContainer";
+import { ItemDetailContainer } from "./components/ItemDetailContainer";
 
 function App() {
   return (
-    <> 
-
-    <NavBar/>
-    <ItemListContainer greeting = 'Bienvenidos a Grillas y Grullas'/>
-
-    </>
+    <BrowserRouter>
+      <>
+        <NavBar />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <ItemListContainer greeting= "Productos" />
+            }
+          />
+          <Route
+            path="/category/:id"
+            element={
+              <ItemListContainer greeting="Productos" />
+            }
+          />
+          <Route path="/items/:id" element={<ItemDetailContainer/>} />
+        </Routes>
+      </>
+    </BrowserRouter>
   );
 }
 

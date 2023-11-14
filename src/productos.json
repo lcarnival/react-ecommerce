@@ -1,0 +1,33 @@
+[{
+        "name": "Agenda Burbujas",
+        "tipo": "Docentes Secundaria",
+        "img": "./img/burbujas.JPG",
+        "precio": "$7500"
+
+    },
+
+    {
+        "name": "Agenda Naturaleza",
+        "tipo": "Docentes Secundaria",
+        "img": "./img/naturaleza.JPG",
+        "precio": "$7500"
+
+    },
+
+    {
+        "name": "Agenda Grullas",
+        "tipo": "Docentes Secundaria",
+        "img": "./img/grullas.JPG",
+        "precio": "$7500"
+
+    },
+
+    {
+        "name": "Agenda Nueva York",
+        "tipo": "Docentes Secundaria",
+        "img": "./img/nuevaYork.JPG",
+        "precio": "$7500" 
+
+    }
+
+]

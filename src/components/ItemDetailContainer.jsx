@@ -19,7 +19,7 @@ export const ItemDetailContainer = () => {
     });
 
     myPromise.then((response) => {
-      const findById = response.find((item) => item.id === Number(id));
+      const findById = response.find((item) => item.id === id);
       setItems(findById);
     });
   }, [id]);

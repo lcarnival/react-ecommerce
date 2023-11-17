@@ -15,9 +15,9 @@ export const NavBar = () => {
             <NavLink to = "/" >Home</NavLink>
           </Navbar.Brand>
           <Nav className="me-auto">
-            <NavLink to="category/nivel inicial">Nivel Inicial</NavLink>
-            <NavLink to="category/nivel primario">Nivel Primario</NavLink>
-            <NavLink to="category/nivel secundario">Nivel Secundario</NavLink>
+            <NavLink to="category/docentes_inicial">Nivel Inicial</NavLink>
+            <NavLink to="category/docentes_primario">Nivel Primario</NavLink>
+            <NavLink to="category/docentes_secundario">Nivel Secundario</NavLink>
           </Nav> 
           <CartWidget count={5}/>
         </Container>

@@ -21,7 +21,7 @@ export const ItemListContainer = (props) => {
         setItems(response);
       } else {
         const filterByCategory = response.filter(
-          (item) => item.category === id
+          (item) => item.categoryId === id
         );
         setItems (filterByCategory);
       }

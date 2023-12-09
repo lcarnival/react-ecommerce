@@ -5,12 +5,16 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import { NavBar } from "./components/NavBar";
-import { title } from "./components/Tittle";
-import { ItemListContainer } from "./components/ItemListContainer";
-import { ItemDetailContainer } from "./components/ItemDetailContainer";
+import { ItemListContainer } from "./components/Pages/ProductSelection/ProductSelectionPage";
+import { ItemDetailContainer } from "./components/Pages/Product/ItemDetailPage";
+import { CartProvider } from "./components/contexts/CartContext";
+import { Cart } from "./components/Pages/Cart/CartPage";
+import { CheckoutPage } from "./components/Pages/Checkout/CheckoutPage";
 
 function App() {
-  return (
+  return ( <CartProvider >
+
+ 
     <BrowserRouter>
       <>
         <NavBar />
@@ -28,9 +32,12 @@ function App() {
             }
           />
           <Route path="/items/:id" element={<ItemDetailContainer/>} />
+          <Route path="/cart" element={<Cart/>} />
+          <Route path="/checkout/:id" element={<CheckoutPage/>} />
         </Routes>
       </>
     </BrowserRouter>
+    </CartProvider>
   );
 }
 

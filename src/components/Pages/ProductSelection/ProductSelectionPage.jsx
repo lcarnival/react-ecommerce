@@ -1,8 +1,8 @@
 import { useParams } from "react-router-dom";
-import { useEffect, useState } from "react";
-import { products } from "../products";
+import { useEffect, useState, useContext } from "react";
 import { ItemList } from "./ItemList";
 import { Container } from "react-bootstrap";
+import { productsService } from "../../../firebase";
 
 export const ItemListContainer = (props) => {
   const [items, setItems] = useState([]);
@@ -10,13 +10,7 @@ export const ItemListContainer = (props) => {
   const { id } = useParams();
 
   useEffect(() => {
-    const myPromise = new Promise((resolve, reject) => {
-      setTimeout(() => {
-        resolve(products);
-      }, 2000);
-    });
-
-    myPromise.then((response) => {
+    productsService.getProducts().then((response) => {
       if (!id) {
         setItems(response);
       } else {

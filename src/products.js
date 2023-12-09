@@ -3,7 +3,8 @@ export const products =
     [{
             id: "1",
             name: "Agenda Burbujas",
-            descripion: "Datos de las diferentes escuelas, almanaque 2024, documentacion,licencias,agenda con carilla para cada semana,solapa portapapeles y notas",
+            stock: 10,
+            description: "Datos de las diferentes escuelas, almanaque 2024, documentacion,licencias,agenda con carilla para cada semana,solapa portapapeles y notas",
             category: "Docentes Secundaria",
             categoryId: "docentes_secundario",
             img: "/img/burbujas.JPG",
@@ -14,7 +15,8 @@ export const products =
         {
             id: "2",
             name: "Agenda Naturaleza",
-            descripion: "Datos de las diferentes escuelas, almanaque 2024, documentacion,licencias,agenda con carilla para cada semana,solapa portapapeles y notas",
+            stock: 10,
+            description: "Datos de las diferentes escuelas, almanaque 2024, documentacion,licencias,agenda con carilla para cada semana,solapa portapapeles y notas",
             category: "Docentes Secundaria",
             categoryId: "docentes_secundario",
             img: "/img/naturaleza.JPG",
@@ -25,7 +27,8 @@ export const products =
         {
             id: "3",
             name: "Agenda Grullas",
-            descripion: "Datos de las diferentes escuelas, almanaque 2024, documentacion,licencias,agenda con carilla para cada semana,solapa portapapeles y notas",
+            stock: 10,
+            description: "Datos de las diferentes escuelas, almanaque 2024, documentacion,licencias,agenda con carilla para cada semana,solapa portapapeles y notas",
             category: "Docentes Secundaria",
             categoryId: "docentes_secundario",
             img: "/img/grullas.JPG",
@@ -36,7 +39,8 @@ export const products =
         {
             id: "4",
             name: "Agenda Nueva York",
-            descripion: "Datos de las diferentes escuelas, almanaque 2024, documentacion,licencias,agenda con carilla para cada semana,solapa portapapeles y notas",
+            stock: 10,
+            description: "Datos de las diferentes escuelas, almanaque 2024, documentacion,licencias,agenda con carilla para cada semana,solapa portapapeles y notas",
             category: "Docentes Secundaria",
             categoryId: "docentes_secundario",
             img: "/img/nuevaYork.JPG",
@@ -48,7 +52,8 @@ export const products =
         {
             id: "5",
             name: "Agenda Floral",
-            descripion: "Datos de las diferentes escuelas, almanaque 2024, documentacion,licencias,agenda con carilla para cada semana,solapa portapapeles y notas",
+            stock: 10,
+            description: "Datos de las diferentes escuelas, almanaque 2024, documentacion,licencias,agenda con carilla para cada semana,solapa portapapeles y notas",
             category: "Docentes Primaria",
             categoryId: "docentes_primario",
             img: "/img/flores.JPG",
@@ -58,7 +63,8 @@ export const products =
         {
             id: "6",
             name: "Agenda Barquito",
-            descripion: "Datos de las diferentes escuelas, almanaque 2024, documentacion,licencias,agenda con carilla para cada semana,solapa portapapeles y notas",
+            stock: 10,
+            description: "Datos de las diferentes escuelas, almanaque 2024, documentacion,licencias,agenda con carilla para cada semana,solapa portapapeles y notas",
             category: "Docentes Primaria",
             categoryId: "docentes_primario",
             img: "/img/barquito.JPG",
@@ -68,7 +74,8 @@ export const products =
         {
             id: "7",
             name: "Agenda Globo Aerostatico",
-            descripion: "Datos de las diferentes escuelas, almanaque 2024, documentacion,licencias,agenda con carilla para cada semana,solapa portapapeles y notas",
+            stock: 10,
+            description: "Datos de las diferentes escuelas, almanaque 2024, documentacion,licencias,agenda con carilla para cada semana,solapa portapapeles y notas",
             category: "Docentes Inicial",
             categoryId: "docentes_inicial",
             img: "/img/globo.JPG",
@@ -78,9 +85,10 @@ export const products =
       
 
         {
-            id: "9",
+            id: "8",
             name: "Agenda Gatito",
-            descripion: "Datos de las diferentes escuelas, almanaque 2024, documentacion,licencias,agenda con carilla para cada semana,solapa portapapeles y notas",
+            stock: 10,
+            description: "Datos de las diferentes escuelas, almanaque 2024, documentacion,licencias,agenda con carilla para cada semana,solapa portapapeles y notas",
             category: "Docentes Inicial",
             categoryId: "docentes_inicial",
             img: "/img/gatito.JPG",

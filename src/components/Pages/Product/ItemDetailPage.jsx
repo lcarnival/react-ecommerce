@@ -3,7 +3,8 @@ import { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
 
 import { ItemDetail } from "./ItemDetail";
-import { products } from "../products";
+import { products } from "../../../products";
+import { productsService } from "../../../firebase";
 
 
 export const ItemDetailContainer = () => {
@@ -12,15 +13,8 @@ export const ItemDetailContainer = () => {
   const { id } = useParams();
 
   useEffect(() => {
-    const myPromise = new Promise((resolve, reject) => {
-      setTimeout(() => {
-        resolve(products);
-      }, 2000);
-    });
-
-    myPromise.then((response) => {
-      const findById = response.find((item) => item.id === id);
-      setItems(findById);
+    productsService.getProductById(id).then((response) => {
+      setItems(response);
     });
   }, [id]);
 

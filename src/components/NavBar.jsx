@@ -19,7 +19,7 @@ export const NavBar = () => {
             <NavLink to="category/docentes_primario">Nivel Primario</NavLink>
             <NavLink to="category/docentes_secundario">Nivel Secundario</NavLink>
           </Nav> 
-          <CartWidget count={5}/>
+          <CartWidget/>
         </Container>
       </Navbar>
   );

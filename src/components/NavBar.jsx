@@ -5,19 +5,21 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
 import { CartWidget } from "./CartWidget";
+import styled from '@emotion/styled';
 
 export const NavBar = () => {
   return (
-
-    <Navbar bg="light" data-bs-theme="light">
-        <Container>
-          <Navbar.Brand>
-            <NavLink to = "/" >Home</NavLink>
+    <Navbar bg="light" data-bs-theme="light" >
+        <Container >
+          <Navbar.Brand href="/">
+            Home
           </Navbar.Brand>
           <Nav className="me-auto">
-            <NavLink to="category/docentes_inicial">Nivel Inicial</NavLink>
-            <NavLink to="category/docentes_primario">Nivel Primario</NavLink>
-            <NavLink to="category/docentes_secundario">Nivel Secundario</NavLink>
+            <Nav.Link href="/category/docentes_inicial">Nivel Inicial</Nav.Link>
+            <Nav.Link href="/category/docentes_primario">Nivel Primario</Nav.Link>
+            <Nav.Link href="/category/docentes_secundario">Nivel Secundario</Nav.Link>
+            <Nav.Link href="/MyShopping">Mis Compras</Nav.Link>
+
           </Nav> 
           <CartWidget/>
         </Container>
